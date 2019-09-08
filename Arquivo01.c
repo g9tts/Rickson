@@ -1,7 +1,8 @@
 #include <stdio.h> 
 #include <stdlib.h>
 #include <locale.h> 
-#include <math.h>
+#include <math.h> 
+#include <conio.h>
  
  int main(void){               //Questao 1
  	//Adaptação do programa para PT-BR
