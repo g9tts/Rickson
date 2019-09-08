@@ -4,11 +4,11 @@
 #include <math.h>
  
  int main(void){               //Questao 1
- 	//Adaptação do programa para PT-BR
+ 	//AdaptaÃ§Ã£o do programa para PT-BR
  	
 	 setlocale(LC_ALL, "Portuguese");
  	
-	 //Definição de variavel
+	 //DefiniÃ§Ã£o de variavel
  	
 	 int a, num, in, c, x, y, k, pot; 
 	 float cd1, cd2, cd3, cr, media, b, n1 = 1, n2 = 2;
@@ -21,12 +21,12 @@
 	 double logaritmo_natural = 0;
 	 double logaritmo_xbase10 = 0;
  	
-	 //Informações sobre selecionaveis + leitor de variavel
+	 //InformaÃ§Ãµes sobre selecionaveis + leitor de variavel
  	 system("cls");
 	 printf("\nDigite 0 para finalizar o programa\n"
 	       "1 para o menu um\n"
 		   "2 para o menu dois\n"
-		   "3 para o menu três\n"
+		   "3 para o menu trÃªs\n"
 		   "4 para o menu quatro\n"
 		   "5 para o menu cinco\n"
 		   "6 para o menu seis\n"
@@ -44,18 +44,18 @@
 	   
 	   if(a == 1){                            //Questao 2
 	   printf("Bem-vindo ao menu 1\n");  
-	   printf("digite um numero inteiro: ");     //Indentifica se o numero é par ou impar
+	   printf("digite um numero inteiro: ");     //Indentifica se o numero Ã© par ou impar
 		scanf("%d",&num);
 		if(num%2==0)//operador %
 		{
 		printf("Par");
 		}
 		else{
-		printf("Ímpar");
+		printf("Ãmpar");
 		}
        }
 	   else if(a == 2){                       //Questao 3
-	   printf("Bem-vindo ao menu 2\n");         //Potenciação
+	   printf("Bem-vindo ao menu 2\n");         //PotenciaÃ§Ã£o
 	   printf ("Primeiro numero: ");
      	scanf ("%d",&x);
      	printf ("Segundo numero: ");
@@ -66,11 +66,11 @@
      	pot = x*(x*k);
      	}
     	 
-        printf ("\n O resuldo é : %d", pot);
+        printf ("\n O resuldo Ã© : %d", pot);
 	   }
 	   else if(a == 3){               
 	   printf("Bem-vindo ao menu 3\n");      //Logaritmo     //Questao 4
-	   printf("Digite suas 2 numeros para operação logaritmo: \n");
+	   printf("Digite suas 2 numeros para operaÃ§Ã£o logaritmo: \n");
 	   scanf("%f %f", &w, &h);  
 	   logaritmo_natural = log(w);
 	   
@@ -88,7 +88,7 @@
 	   
        }
 	   else if(a == 4){                   //Questao 5
-	   printf("Bem-vindo ao menu 4\n");   //Indentifica se o ano é bissexto ou nao
+	   printf("Bem-vindo ao menu 4\n");   //Indentifica se o ano Ã© bissexto ou nao
 	  printf("digite um ano: ");
 		scanf("%d",&num);
 		if(num%4==0)   //operador %
@@ -103,10 +103,10 @@
 	   printf("Bem-vindo ao menu 5\n");       
 	  printf("Digite suas 3 notas, para o calculo da media\n");
 	   scanf("%f %f %f", &cd1, &cd2, &cd3);
-	   cr=(cd1*n1)+(cd2+n1)+(cd3+n2)/cd1+cd2+cd3; //Calculo do CRE
+	   cr=(cd1*n1)+(cd2*n1)+(cd3*n2)/cd1+cd2+cd3; //Calculo do CRE
 	   media = (cd1 + cd2 + cd3)/3;               //Calculo da media
-	   printf("Sua media é %f\n", media);
-	   printf("Seu CRE é %f\n", cr);
+	   printf("Sua media Ã© %f\n", media);
+	   printf("Seu CRE Ã© %f\n", cr);
 	   if(media>=6.0){
 	   	printf("Parabens, voce foi aprovado!");
 	   }
@@ -120,7 +120,7 @@
 	   media = (cd1 + cd2)/2;
 	   
 	   if(cd1>0 && cd1<=10 && cd2>0 && cd2<=10){         //Notas apenas entre 0 e 10
-	   	printf("Sua media é %f", media);
+	   	printf("Sua media Ã© %f", media);
        }
        else{
        	printf("ERROR404\n");
@@ -134,7 +134,7 @@
 	   printf("Bem-vindo ao menu 8\n");
 	   }
 	   else if(a == 9){                    //Questao 8
-	   printf("Bem-vindo ao menu 9\n"); //Transformação da matricula em hexa-decimal e a repitação do nome
+	   printf("Bem-vindo ao menu 9\n"); //TransformaÃ§Ã£o da matricula em hexa-decimal e a repitaÃ§Ã£o do nome
        printf("sua matricula, por favor: \n");
 	   scanf("%ld", &decimal);
 	   printf("seu nome, por favor: ");
@@ -151,7 +151,7 @@
 	   hexadecimal[j++] = 55 + r;   
 	   q = q / 16;            
 	   }
-	   printf("olá %s ",nome);
+	   printf("olÃ¡ %s ",nome);
 	   printf("sua matricula em hexadecimal :",decimal);
 	   
 	 
@@ -161,14 +161,14 @@
 	  printf("\n");
 	 }
 	   else{ 
-	   printf("\nComando inválido, por favor digite outro número: ");
+	   printf("\nComando invÃ¡lido, por favor digite outro nÃºmero: ");
        } 
-    //Opções a serem repetidas + Leitor de variavel
+    //OpÃ§Ãµes a serem repetidas + Leitor de variavel
     
 	printf("\nDigite 0 para finalizar o programa\n"
 	       "1 para o menu um\n"
 		   "2 para o menu dois\n"
-		   "3 para o menu três\n"
+		   "3 para o menu trÃªs\n"
 		   "4 para o menu quatro\n"
 		   "5 para o menu cinco\n"
 		   "6 para o menu seis\n"
