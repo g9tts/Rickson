@@ -1,7 +1,7 @@
 #include <stdio.h> 
 #include <stdlib.h>
 #include <locale.h> 
-#include <math.h> 
+#include <math.h>
 #include <conio.h>
  
  int main(void){               //Questao 1
@@ -12,13 +12,13 @@
 	 //Definição de variavel
  	
 	 int a, num, in, c, x, y, k, pot; 
-	 float cd1, cd2, cd3, cr, media, b, n1 = 1, n2 = 2;
+	 float cd1, cd2, cd3, cr, media, b, n1 = 1, n2 = 2, mp;
 	 long decimal, q, r;
 	 int i, j = 0;
 	 char hexadecimal[100];
 	 char nome[45];
-	 double w = 9.75;
-	 double h = 9.75;
+	 double w = 10;
+	 double h = 10;
 	 double logaritmo_natural = 0;
 	 double logaritmo_xbase10 = 0;
  	
@@ -106,7 +106,9 @@
 	   scanf("%f %f %f", &cd1, &cd2, &cd3);
 	   cr=(cd1*n1)+(cd2*n1)+(cd3*n2)/cd1+cd2+cd3; //Calculo do CRE
 	   media = (cd1 + cd2 + cd3)/3;               //Calculo da media
+	   mp=(cd1*n1)+(cd2*n1)+(cd3*n2)/1+2+3;             //Calculo da media ponderada
 	   printf("Sua media é %f\n", media);
+	   printf("Media pondera é %f\n", mp);
 	   printf("Seu CRE é %f\n", cr);
 	   if(media>=6.0){
 	   	printf("Parabens, voce foi aprovado!");
