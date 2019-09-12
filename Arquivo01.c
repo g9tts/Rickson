@@ -4,7 +4,7 @@
 #include <math.h>
 #include <conio.h>
  
- int main(void){               //Questao 1
+ int main(){               //Questao 1
  	//Adaptação do programa para PT-BR
  	
 	 setlocale(LC_ALL, "Portuguese");
@@ -25,7 +25,7 @@
 	 //Informações sobre selecionaveis + leitor de variavel
  	 system("cls");
 	 printf("\nDigite 0 para finalizar o programa\n"
-	       "1 para o menu um\n"
+	           "1 para o menu um\n"
 		   "2 para o menu dois\n"
 		   "3 para o menu três\n"
 		   "4 para o menu quatro\n"
@@ -33,7 +33,8 @@
 		   "6 para o menu seis\n"
 		   "7 para o menu sete\n"
 		   "8 para o menu oito\n"
-		   "9 para o menu nove\n");
+		   "9 para o menu nove\n"
+		   "10 para o menu dez\n");
 	scanf("%d", &a); 
 	system("cls");
 	
@@ -104,9 +105,11 @@
 	   printf("Bem-vindo ao menu 5\n");       
 	  printf("Digite suas 3 notas, para o calculo da media\n");
 	   scanf("%f %f %f", &cd1, &cd2, &cd3);
-	   cr=(cd1*n1)+(cd2*n1)+(cd3*n2)/cd1+cd2+cd3; //Calculo do CRE
-	   media = (cd1 + cd2 + cd3)/3;               //Calculo da media
-	   mp=(cd1*n1)+(cd2*n1)+(cd3*n2)/1+2+3;             //Calculo da media ponderada
+	   
+	         cr=(cd1*n1)+(cd2*n1)+(cd3*n2)/cd1+cd2+cd3; //Calculo do CRE
+	         media = (cd1 + cd2 + cd3)/3;               //Calculo da media
+	         mp=(cd1*n1)+(cd2*n1)+(cd3*n2)/1+2+3;             //Calculo da media ponderada
+	   
 	   printf("Sua media é %f\n", media);
 	   printf("Media pondera é %f\n", mp);
 	   printf("Seu CRE é %f\n", cr);
@@ -136,8 +139,11 @@
 	   else if(a == 8){
 	   printf("Bem-vindo ao menu 8\n");
 	   }
-	   else if(a == 9){                    //Questao 8
-	   printf("Bem-vindo ao menu 9\n"); //Transformação da matricula em hexa-decimal e a repitação do nome
+	   else if(a == 9){
+	   printf("Bem-vindo ao menu 9\n");
+	   }
+	   else if(a == 10){                    //Questao 8
+	   printf("Bem-vindo ao menu 10\n"); //Transformação da matricula em hexa-decimal e a repitação do nome
        printf("sua matricula, por favor: \n");
 	   scanf("%ld", &decimal);
 	   printf("seu nome, por favor: ");
@@ -169,7 +175,7 @@
     //Opções a serem repetidas + Leitor de variavel
     
 	printf("\nDigite 0 para finalizar o programa\n"
-	       "1 para o menu um\n"
+	           "1 para o menu um\n"
 		   "2 para o menu dois\n"
 		   "3 para o menu três\n"
 		   "4 para o menu quatro\n"
@@ -177,7 +183,8 @@
 		   "6 para o menu seis\n"
 		   "7 para o menu sete\n"
 		   "8 para o menu oito\n"
-		   "9 para o menu nove\n");
+		   "9 para o menu nove\n"
+		   "10 para o menu dez\n");
 	scanf("%d", &a); 
 	system("cls");
 	
