@@ -174,7 +174,7 @@ int main (){
 				}
 			
 		case 9:{
-			system("cls");
+			system("cls");             //Serie de Fibonacci
 			printf("Bem-vindo ao menu 9\n");
 			
 			printf("Digite um numero: ");
