@@ -11,13 +11,15 @@ int main (){
 	int a=1, num, in, c, x, y, k, pot, fat, n, resultado = 0;  //Definição de variavel
 	float cd1, cd2, cd3, cr, media, b, n1 = 1, n2 = 2, mp;
 	long decimal, q, r;
-	int i, j = 0;
+	int i, j = 0, i1, nn, b1, a1, auxiliar;
 	char hexadecimal[100];
 	char nome[45];
 	double w = 10;
 	double h = 10;
 	double logaritmo_natural = 0;
-	double logaritmo_xbase10 = 0;
+	double logaritmo_xbase10 = 0; 
+	a1 = 0;
+	b1 = 1;
 	
 	while (a!=0){
 	
@@ -174,6 +176,20 @@ int main (){
 		case 9:{
 			system("cls");
 			printf("Bem-vindo ao menu 9\n");
+			
+			printf("Digite um numero: ");
+			scanf("%d", &nn);
+			printf("\nSerie de Fibonacci: \n\n");
+			printf("%d\n", b1);
+			
+			for(i1 = 0; i1 < nn; i1++) {
+				
+				auxiliar = a1 + b1;
+				a1 = b1;
+				b1 = auxiliar;
+				
+				printf("%d\n", auxiliar);
+			}
 			break;
 				}
 		
