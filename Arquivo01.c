@@ -11,7 +11,7 @@
  	
 	 //Definição de variavel
  	
-	 int a, num, in, c, x, y, k, pot, fat, n; 
+	 int a, num, in, c, x, y, k, pot, fat, n, resultado = 0; 
 	 float cd1, cd2, cd3, cr, media, b, n1 = 1, n2 = 2, mp;
 	 long decimal, q, r;
 	 int i, j = 0;
@@ -83,10 +83,10 @@
 	   
 	   logaritmo_natural = log(h);
 	   
-	   printf("Logaritmo natural de y %.2f = %.2f\n",w, logaritmo_natural);
+	   printf("Logaritmo natural de y %.2f = %.2f\n",h, logaritmo_natural);
 	   
 	   logaritmo_xbase10 = log10(h);
-	   printf("Logaritmo de y na base10 %.2f = %.2f\n",w, logaritmo_xbase10);
+	   printf("Logaritmo de y na base10 %.2f = %.2f\n",h, logaritmo_xbase10);
 	   
        }
 	   else if(a == 4){                   //Questao 5
@@ -144,7 +144,21 @@
        printf("\nFatorial calculado: %d", fat); 
   	   }
 	   else if(a == 8){
-	   printf("Bem-vindo ao menu 8\n");
+	   printf("Bem-vindo ao menu 8\n"); 
+	   printf("Digite um número: ");
+ 	   scanf("%d", &num);
+ 
+ 	for (i = 2; i <= num / 2; i++) {
+    if (num % i == 0) {
+       resultado++;
+       break;
+    }
+    }
+ 
+    if (resultado == 0)
+    printf("%d é um número primo\n", num);
+    else
+    printf("%d não é um número primo\n", num);
 	   }
 	   else if(a == 9){
 	   printf("Bem-vindo ao menu 9\n");
