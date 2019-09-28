@@ -180,30 +180,31 @@ int main (){
 		case 10: {                  //Questao 8
 			system("cls");   
 			printf("Bem-vindo ao menu 10\n");
+			
 			printf("sua matricula, por favor: \n");  
-	   scanf("%ld", &decimal);
-	   printf("seu nome, por favor: ");
-	   scanf("%s",nome);
+	   		scanf("%ld", &decimal);
+	   		printf("seu nome, por favor: ");
+	   		scanf("%s",nome);
 	 
-	   q = decimal;
+	   		q = decimal;
 	                                               //Transformação da matricula em hexa-decimal e a repitação do nome
-	   while (q != 0)
-	   {
-	   r = q % 16;          
-	   if (r < 10)
-	   hexadecimal[j++] = 48 + r;   
-	   else
-	   hexadecimal[j++] = 55 + r;   
-	   q = q / 16;            
-	   }
-	   printf("olá %s ",nome);
-	   printf("sua matricula em hexadecimal :",decimal);
+	   		while (q != 0)
+	   		{
+	   		r = q % 16;          
+	   		if (r < 10)
+	   		hexadecimal[j++] = 48 + r;   
+	   		else
+	   		hexadecimal[j++] = 55 + r;   
+	   		q = q / 16;            
+	   		}
+	   		printf("olá %s ",nome);
+	   		printf("sua matricula em hexadecimal :",decimal);
 	   
 	 
 	 
-	  for (i = j; i >= 0; i--)
-	  printf("%c", hexadecimal[i]);
-	  printf("\n");
+	  		for (i = j; i >= 0; i--)
+	  		printf("%c", hexadecimal[i]);
+	  		printf("\n");
 			break; 
 				}
 		
