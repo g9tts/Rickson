@@ -11,7 +11,7 @@
  	
 	 //Definição de variavel
  	
-	 int a, num, in, c, x, y, k, pot; 
+	 int a, num, in, c, x, y, k, pot, fat, n; 
 	 float cd1, cd2, cd3, cr, media, b, n1 = 1, n2 = 2, mp;
 	 long decimal, q, r;
 	 int i, j = 0;
@@ -134,7 +134,14 @@
         
        }
 	   else if(a == 7){
-	   printf("Bem-vindo ao menu 7\n");
+	   printf("Bem-vindo ao menu 7\n"); 
+	   printf("Insira um valor para o qual deseja calcular seu fatorial: ");
+       scanf("%d", &n);
+ 
+       for(fat = 1; n > 1; n = n - 1);
+       fat = fat * n;
+ 
+       printf("\nFatorial calculado: %d", fat); 
   	   }
 	   else if(a == 8){
 	   printf("Bem-vindo ao menu 8\n");
